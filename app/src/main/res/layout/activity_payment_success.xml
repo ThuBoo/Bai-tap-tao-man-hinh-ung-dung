@@ -9,7 +9,6 @@
     android:background="#FFFFFF">
 
 
-    <!-- Tiêu đề -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         android:textColor="#4CAF50"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Thông tin chi tiết -->
     <TextView
         android:id="@+id/tvDetails"
         android:layout_width="wrap_content"
@@ -31,7 +29,6 @@
         android:gravity="center"
         android:layout_marginBottom="32dp"/>
 
-    <!-- Button Back -->
     <Button
         android:id="@+id/btnBack"
         android:layout_width="match_parent"
@@ -40,8 +37,6 @@
         android:backgroundTint="#2196F3"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="12dp"/>
-
-    <!-- Button Cancel -->
     <Button
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
