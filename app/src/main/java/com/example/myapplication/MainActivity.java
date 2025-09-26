@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,12 +26,13 @@ public class MainActivity extends AppCompatActivity {
         binding.tvRegister.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
             startActivity(intent);
+            finish();
         });
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        binding.tvForgetPassword.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ForgetPasswordActivity.class);
+            startActivity(intent);
+            finish();
+        });
     }
 }

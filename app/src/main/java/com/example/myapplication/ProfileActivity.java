@@ -5,20 +5,21 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapplication.databinding.ActivityPaymentSuccessBinding;
+import com.example.myapplication.databinding.ActivityProfileBinding;
 
-public class PaymentSuccessActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
-    private ActivityPaymentSuccessBinding binding;
+    private ActivityProfileBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_payment);
-        binding = ActivityPaymentSuccessBinding.inflate(getLayoutInflater());
+
+        binding = ActivityProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         binding.btnBack.setOnClickListener(v -> {
-            Intent intent = new Intent(PaymentSuccessActivity.this, HomeActivity.class);
+            Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
             startActivity(intent);
             finish();
         });
